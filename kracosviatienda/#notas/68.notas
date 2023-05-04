@@ -1,0 +1,33 @@
+
+*auth identifica al usuario, completo el login y dependiendo de mi rol  determina si mostramos catalogo o administracion.
+*trabajamos sobre usuarios_model creando funtion check_usuario y ultlogin
+*en config modificamos routes el nombre del controlador auth
+*en controlador auth modificamos la ruta linea 18 $this->load->view("usuarios/login");
+
+(deberiamos declarar constantes)
+
+en la base de datos
+*creo en la tabla roles en de la base de datos= administradores  y clientes.
+*en la tabla usuarios creamos= usuario->admin password->admin y usuario->cliente password->cliente.
+
+*creo vista menuadmi y en el controlador lo cargo esta vista 
+en esta vista estilizamos con boostrap a negro el menu
+
+en el controlador administracion cambio
+public function index(){
+		redirect("administracion/inicio");
+	}
+
+definimos constantes
+config/constants
+Y colocamos la constante changuito en la vista de los menús abreindo php en el primer navbar-brand     
+
+en views/themes/catalogo
+
+tarea para la casa
+en el menu de administracion 
+ultimo menu sea un drodown que diga datos
+dar de alta usuarios=
+abro y me lleva a lista de usuarios y tengo un boton para cargar usuario alta
+dar de alta roles
+

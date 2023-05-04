@@ -1,0 +1,55 @@
+comenzamos a desarrollar las base de datos de los Actores
+CATEGORIA:
+*categoria_id                                       INT PK AI
+*categoria                                          TEXT *60
+*categoria_corto(abreviatura de las categorias)     TEXT *10
+*orden                                              INT DF:0
+*estado                                             TINT DF:1
+
+ARTICULOS:
+*articulo_id                                        BIGINT-U PK AI
+*articulo                                           TEXT *60
+*descripcion                                        LONGTEXT
+*categoria_id                                       INT
+*stock_actual                                       INT
+*stock_minimo (cuando el estoc actual cae por       INT
+           debajo del minimo tengo que pedir)
+*estado                                             TINT DF:1
+*ult_modificacion                                   DATATIME
+
+LISTA_DE_PRECIOS
+*lista_de_precios
+*nombre
+*estado
+*ult_modificacion
+
+ARTICULOS_X_LISTA_DE_PRECIOS
+tabla nm(cruzo multiples recursos de una tabla con multiples recursos de otra tabla/tabla de nexo lo indico en el nombre con el x)
+*articulos_x_lista_de_precios_id
+*lista_de_precios_id 
+*articulo_id
+*precio
+
+USUARIOS
+*usuario_id
+*usuario 
+*password (para guardar un )
+*lista_de_precios_id
+*ultlogin
+*estado
+*rol_id
+
+ROLES
+*rol_id
+*nombre
+*estado
+
+luego desarrollamos los modelos de datos (crud)
+*primero desarrollamos en models/usuarios.php
+
+modelar la vista del login 
+la vista principal
+la vista de alta de los actores 
+crear el controlador 
+dentro el metodo para llamar la vista de listado y de alta
+ creo carpeta de listado y un formulario de altas en vista

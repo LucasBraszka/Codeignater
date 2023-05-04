@@ -1,0 +1,6 @@
+Creamos MASTER CONTROLLER en APPLICATION / CORE 
+MY_Controller.php
+Controlador maestro!
+para evitar trabajos repetitivos , editariamos el extends del controlador donde lo queremos extends MY_Controller
+
+MASTER CONTROLLERS DERIVADOS

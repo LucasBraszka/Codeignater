@@ -1,0 +1,17 @@
+*en congig/routes definimos al controlador catalogo en default.
+*en views/themes trabajamos sobre default.php copiamos su contenido en archivo catalogo.php
+*creamos favicon con nuestro logo https://www.favicon-generator.org/
+*borramos las 3 lineas luego de  <!-- Le fav and touch icons --> y las reemplazamos por el codigo obtenido en favicon
+crear en asset la carpeta icons y descomprimir dentro el zip descargado de favicon)
+modificamos la ruta de href la lineas de acceso directo a los iconos (href="<?php echo base_url(); ?>/asset/icons/)
+*en el controlador Catalogo modificamos en la funcion mostrar el set_template ->que acceda a la plantilla catalogo 
+
+(nos queda modificar el manifiesto)
+
+*en la plantilla borramos toda la etiqueta style.
+*ya en el body realizamos modificaciones (div class= navbar se borra)
+*en get section modificamos 'text_header' la identificacion a "menu".
+*en boostrap copiamos el primer ejemplo de navbar, creamos en views el archivo menú y le pegamos el ejemplo.
+*en el controlador Catalogo agregamos linea section para cargar menú
+
+en bosstrap starter-template copiamos la linea de estilizacion de css y la segunda linea de js de boostrap y lo pegamos en la plantilla catalogo antes de php

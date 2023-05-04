@@ -1,0 +1,109 @@
+DESARROLLO DE CARRITO DE COMPRAS
+
+En las mecanica de funcionamiento tenemos:
+*parte de cliente final 
+*parte de gestores
+(se definen esteticas en comun, con los nombres de campos y propiedades estandarizados)
+
+**TENER EN CUENTA --> Deberíamos incorporar algún tipo de control de versiones.
+                  --> Las actividades repetitivas se hacen en casa.
+                  --> Será un producto usable a nivel comercial (licencia mit)
+                  --> Usaremos Codelgniter .3 con pluguins
+                  --> El carritos de de compras tendrá:
+                        * diferentes lista de precios a manejar.
+                        * productos con diferentes atributos.
+                  --> Formacion de precio:se le asigna a cada cliente una lista de precios, esa lista la forjo yo.
+                      Tengo una lista de articulos, con el precio de lista en general
+                      luego tengo la lista de precios que la vinculo con la del cliente.
+
+
+El proyecto se divide en:
+HAREA PUBLICA Y HAREA DE GESTION
+
+HAREA PUBLICA --> portal cliente 
+
+En la estructura de la vista principal tendremos:
+*logo
+*carrito de compras
+*despligable de usuario con: -preferencias
+                             -historial
+*un lateral donde colocamos las categorias
+*al seleccionar una categoria despliega el campo elejido: 
+                             -tiene fotos de los productos con el precios
+*en el centro un buscador global 
+(ya casi no se usan los pie de pagina)
+(landing es un agregado al sitio)
+
+MECANICA
+*ya tiene que estar logueado
+*si selecciona sobre el producto nos dirige a una vista
+
+La vista -->sería el carrito
+
+*la parte de arriba es igual al sitio principal
+(un volver arriba)
+*tiene una lista de los productos seleccionados a comprar 
+*con un total de lo gastado 
+*un imput para seguir comprando y otro para efectuar la compra
+sobre la tabla en el campo del producto sumamos un spinner para la modificar la cantidad
+*un tachito para borrar
+*un codigo de pedido 
+
+Actores Involucrados -->aquellos componentes que arman al sistemas 
+
+*usuarios
+*articulos
+*categorias
+*pedidos
+
+*usuario podrá realizar las siguiente acciones:
+listar
+crear
+actualizar 
+borrar
+obtener por id
+
+
+Cuando el Usuario concreta la compra
+despliega un check out
+donde pondremos medio de pago, modo de entrega alguna, nota extra.
+
+HAREA MECANICA(gestionar los articulos a vender)
+gestion de usuarios
+listado de los pedidos nuevos sin tratar
+
+*crear base de datos 
+
+YA PROGRAMANDO 
+-creo proyecto changuito
+-creo base de datos changuito (modifico base url ('http://localhost/changuito/') y la encriptyon key en config/config)
+-modifico data base usuario root y changuito de nombre de la database
+-en autoload agrego las librerias y la url de helper
+-descargo dentro de changuito Codelgniter 3 
+creo carpetas:
+    #tools
+    assets(dentro carpeta js cjs img)
+
+Integramos sistemas de plantillas:
+-descargamos https://www.grocerycrud.com/v1.x/codeigniter-simplicity
+-descomprimo y copia/pego assets y aplicattion en nuestro proyecto
+-generar un unico motor de plantilla
+-this init es una funcion privada --> es el arranque, lo tengo que ejecutar al comienzo.
+
+Creamos primer controlador catalogo
+*al index le asignamos redirect.
+*creamos un nuevo metodo que se llama inicio.
+*y el array de transporte.
+
+Creamos dentro de views una carpeta catalogo y dentro  creamos un archivo principal.
+
+
+
+
+
+
+
+
+
+
+
